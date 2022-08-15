@@ -1,0 +1,17 @@
+diff --git a/src/common/scripts/button.js b/src/common/scripts/button.js
+index 5a67f7b..83f40c3 100644
+--- a/src/common/scripts/button.js
++++ b/src/common/scripts/button.js
+@@ -41,10 +41,10 @@ export const addButton = function(parent) {
+       buttonImage = 'default';
+       buttonExitImage = 'default-exit';
+     }
+-    const buttonImageURL = getExtensionURL(`images/${buttonImage}.svg`);
++    const buttonImageURL = `https://gist.githubusercontent.com/darkbrow/abfec4b22576d06a633346f06c3cc2f2/raw/444d3b120581cc4d8bf4a913d89948b10802c7c2/` + `${buttonImage}.svg`;
+     image.src = buttonImageURL;
+     if (buttonExitImage) {
+-      const buttonExitImageURL = getExtensionURL(`images/${buttonExitImage}.svg`);
++      const buttonExitImageURL = `https://gist.githubusercontent.com/darkbrow/abfec4b22576d06a633346f06c3cc2f2/raw/444d3b120581cc4d8bf4a913d89948b10802c7c2/` + `${buttonExitImage}.svg`;
+       addPictureInPictureEventListener(function(video, isPlayingPictureInPicture) {
+         image.src = (isPlayingPictureInPicture) ? buttonExitImageURL : buttonImageURL;
+       });

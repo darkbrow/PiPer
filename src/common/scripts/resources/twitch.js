@@ -30,7 +30,16 @@ export const resource = {
   buttonParent: function() {
     return document.querySelector('.player-controls__right-control-group,.player-buttons-right');
   },
-  buttonScale: 0.8,
+  buttonScale: 0.7,
+  buttonStyle: /** CSS */ (`
+    /* Declaring CSS this way ensures it gets optimized when the extension is built */
+    cursor: pointer;
+    opacity: 1;
+    width: 32px;
+    height: 32px;
+  `),
+  // Apply a custom CSS hover style
+  buttonHoverStyle: /** CSS */ (`opacity: 1 !important`),
   captionElement: function() {
     return document.querySelector('.player-captions-container');
   },

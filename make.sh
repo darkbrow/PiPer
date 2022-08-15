@@ -21,7 +21,7 @@ Usage: make.sh [options]
 Options:
   -h -? --help                                  Show this screen
   -t --target (all|safari|safari-legacy|chrome) Make extension for target browser [default: all]
-  -p --profile (release|debug|distribute)       Set settings according to profile [default: debug]
+  -p --profile (release|readable|debug|distribute)       Set settings according to profile [default: debug]
   -c --compress-css                             Compress CSS
   -j --compress-js                              Compress JavaScript
   -s --compress-svg                             Compress SVG
@@ -67,9 +67,18 @@ case $profile in
     compress_svg=1
     compress_css=1
     compress_js=1
-    debug_js=1
+    debug_js=0
     package_ext=0
-    logging_level=40
+    logging_level=100
+    optimize_strings=1
+    ;;
+  readable)
+    compress_svg=1
+    compress_css=0
+    compress_js=0
+    debug_js=0
+    package_ext=0
+    logging_level=100
     optimize_strings=1
     ;;
   *)

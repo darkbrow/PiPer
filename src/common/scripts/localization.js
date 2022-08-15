@@ -5,6 +5,7 @@ const localizations = {};
 localizations['button-title'] = {
   'en': 'Open Picture in Picture mode',
   'de': 'Bild-in-Bild starten',
+  'ko': '화면 속 화면',
   'nl': 'Beeld in beeld starten',
   'fr': 'Démarrer Image dans l’image',
 };

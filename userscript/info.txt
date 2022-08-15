@@ -1,0 +1,20 @@
+// ==UserScript==
+// @name         PiPer-js-only
+// @namespace    https://raw.githubusercontent.com/darkbrow/PiPer-js-only/main
+// @homepage     https://raw.githubusercontent.com/darkbrow/PiPer-js-only/main
+// @version      1.0.1
+// @encoding     utf-8
+// @description  Add Picture in Picture button on Youtube toolbar. And fix to show subtitle in PIP window. This script is blatantly copied from amarcu5's good safari extension PiPer(https://github.com/amarcu5/PiPer.git).
+// @icon         https://raw.githubusercontent.com/darkbrow/PiPer-js-only/main/toolbar/icon.png
+// @author       amarcu5
+// @exclude      *://music.youtube.com/*
+// @exclude      *://*.music.youtube.com/*
+// @compatible   safari
+// @downloadURL  https://raw.githubusercontent.com/darkbrow/PiPer-js-only/main/js-readable/scripts/piper.js
+// @updateURL    https://raw.githubusercontent.com/darkbrow/PiPer-js-only/main/js-readable/scripts/piper.js
+// @grant        GM.xmlHttpRequest
+// @connect      youtube.com
+// @grant        GM_addStyle
+// @run-at       document-end
+// ==/UserScript==
+
