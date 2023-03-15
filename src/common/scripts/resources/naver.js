@@ -20,6 +20,7 @@ export const resource = {
     // Returns the element that will contain the button
     var naverVidElements = [
         document.querySelector(".ControlBox_comp_control_box__zduPu .ControlBox_view_control_group__1DCTL"),
+        document.querySelector(".VideoControlBox_view_control_group__Gls_j"),
         document.querySelector(".rmc_control_right"),
         document.querySelector(".pzp-pc__bottom-buttons-right"),
     ];
